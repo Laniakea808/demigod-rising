@@ -1,0 +1,95 @@
+.contenedor {
+  background: #0e0e0eee;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 1em;
+  padding: 2.5rem;
+  width: 700px;
+  color: #999;
+  border: 1px solid #303030;
+}
+
+.cuerpo-principal {
+  display: flex;
+  align-items: space-between;
+
+  & > img {
+    border: 1px solid #8c70a9;
+    object-fit: cover;
+    height: 350px;
+    width: 300px;
+    margin-left: 0.5rem;
+  }
+
+  & > .txt {
+    width: 50%;
+    padding-left: 2rem;
+
+  & > h1 {
+    color: #8c70a9;
+    text-align: center;
+    font-family: "Cinzel Decorative", serif;
+  }
+
+    & > h2 {
+      color: #FFF;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 0.85em;      
+    }
+  
+    & > p {
+      text-align: justify;
+    }
+  }
+}
+
+.contenedor > .datos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 0.25rem 0;
+  margin-top: 1rem;
+
+  & > .dato {
+    border: 1px solid #303030;
+    width: 24.7%;
+    padding: 0.5rem 0;
+    line-height: 1em;
+
+    & > h2 {
+      color: #8c70a9;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 0.8em;
+      margin: 0;
+    }
+
+    & > p {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+}
+
+.contenedor > .enlaces {
+  border: 1px solid #303030;
+  width: 97.4%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  color: #8c70a9;
+  text-align: center;
+}
