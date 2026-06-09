@@ -15,12 +15,11 @@
   align-items: space-between;
 
   & > img {
-    border: 1.5px solid #8c70a9;
+    border: 1px solid #8c70a9;
     object-fit: cover;
     height: 350px;
     width: 300px;
     margin-left: 0.5rem;
-    filter: grayscale(1) brightness(.6) contrast(1);
   }
 
   & > .txt {
@@ -61,7 +60,7 @@
     border: 1px solid #303030;
     width: 24.7%;
     padding: 0.5rem 0;
-    line-height: 1.2em;
+    line-height: 1em;
 
     & > h2 {
       color: #8c70a9;
@@ -80,7 +79,7 @@
       text-transform: uppercase;
       padding: 0;
       margin: 0;
-      font-weight: 500;
+      font-weight: 600;
     }
   }
 }
@@ -93,9 +92,152 @@
   text-transform: uppercase;
   color: #8c70a9;
   text-align: center;
+}
 
-  & > a {
-    color: #8c70a9;
-    text-decoration: none;
+.contenedor {
+
+  & > .month {
+
+    position: relative;
+    margin-bottom: 2rem;
+
+    & > h2 {
+      color: #8c70a9;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 1.2em;
+      margin-bottom: 1.5rem;
+    }
+
+    & > .line {
+      position: absolute;
+      left: 92px;
+      top: 2rem;
+      bottom: 0;
+      width: 1px;
+      background: #303030;
+    }
+
+    & > .entry {
+
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 1.25rem;
+
+      & > .day {
+        width: 60px;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+  &.same-day {
+
+    & > .day {
+      visibility: hidden;
+    }
+
   }
+
+      & > .marker {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        z-index: 2;
+        background: #0e0e0e;
+      }
+
+      & > .content {
+
+        flex: 1;
+
+        & > .title {
+          color: #cfcfcf;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 0.9em;
+        }
+
+        & > .info {
+          margin-top: .35rem;
+          color: #777;
+          font-size: .85em;
+        }
+
+      }
+
+      & > .status {
+        border: 1px solid #303030;
+        border-radius: 30px;
+        padding: .45rem 1rem;
+        font-size: .7em;
+        text-transform: uppercase;
+        color: #999;
+      }
+
+      &.complete {
+
+        & > .day, & > .status {
+          color: #8c70a9;
+        }
+
+        & > .marker {
+          background: #8c70a9;
+        }
+
+      }
+
+      &.active {
+
+        & > .day {
+          color: #FFF;
+        }
+
+        & > .marker {
+          border: 2px solid #FFF;
+        }
+
+      }
+
+      &.abandoned {
+
+        & > .day {
+          color: #666;
+        }
+
+        & > .marker {
+
+          position: relative;
+          border-radius: 0;
+          background: transparent;
+
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            top: 6px;
+            width: 14px;
+            height: 2px;
+            background: #666;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
 }
