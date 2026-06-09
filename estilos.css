@@ -150,6 +150,19 @@
         background: #0e0e0e;
       }
 
+      &.mission > .marker {
+        border-radius: 0;
+        transform: rotate(45deg);
+      }
+
+      &.complete > .marker {
+        background: #8c70a9;
+      }
+
+      &.active > .marker {
+        border: 2px solid #FFF;
+      }
+      
       & > .text-content {
 
         flex: 1;
