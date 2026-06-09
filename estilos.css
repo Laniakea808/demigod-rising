@@ -1,3 +1,6 @@
+body {
+  background: black;
+}
 .contenedor {
   background: #0e0e0eee;
   font-family: "Lato", sans-serif;
@@ -15,11 +18,12 @@
   align-items: space-between;
 
   & > img {
-    border: 1px solid #8c70a9;
+    border: 1.5px solid #8c70a9;
     object-fit: cover;
     height: 350px;
     width: 300px;
     margin-left: 0.5rem;
+    filter: grayscale(1) brightness(.6) contrast(1);
   }
 
   & > .txt {
@@ -60,7 +64,7 @@
     border: 1px solid #303030;
     width: 24.7%;
     padding: 0.5rem 0;
-    line-height: 1em;
+    line-height: 1.2em;
 
     & > h2 {
       color: #8c70a9;
@@ -92,4 +96,9 @@
   text-transform: uppercase;
   color: #8c70a9;
   text-align: center;
+
+  & > a {
+    color: #8c70a9;
+    text-decoration: none;
+  }
 }
