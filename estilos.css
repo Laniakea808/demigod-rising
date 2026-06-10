@@ -255,9 +255,6 @@
   }
 
 }
-body {
-  background: black;
-}
 .contenedor {
   background: #0e0e0eee;
   font-family: "Lato", sans-serif;
@@ -311,9 +308,6 @@ body {
     }
 
   }
-
-
-
   & > .lista-relaciones {
     max-height: 460px;
     overflow: auto;
