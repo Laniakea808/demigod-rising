@@ -406,3 +406,47 @@
 .relacion.criaturas h3 {
   color: #888;
 }
+
+.conntenedor {
+  .inventario {
+  
+    width: 700px;
+    background: #0e0e0e;
+    border: 1px solid #303030;
+    padding: 2.5rem;
+    color: #999;
+    font-family: "Lato", sans-serif;
+  
+    & > .item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #303030;
+      margin-bottom: .8rem;
+      min-height: 55px;
+  
+      & > .icono {
+        width: 55px;
+        text-align: center;
+        border-right: 1px solid #303030;
+        color: #999;
+        font-size: 1.1rem;
+      }
+  
+      & > .nombre {
+        flex: 1;
+        padding-left: 1rem;
+        color: #8c70a9;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: .85em;
+      }
+  
+      & > .cantidad {
+        width: 70px;
+        text-align: center;
+        color: #d5d5d5;
+        font-weight: 600;
+      }
+    }
+  }
+}
