@@ -407,15 +407,7 @@
   color: #888;
 }
 
-.contenedor {
-  & > .inventario {
-  
-    width: 700px;
-    background: #0e0e0e;
-    border: 1px solid #303030;
-    padding: 2.5rem;
-    color: #999;
-    font-family: "Lato", sans-serif;
+.contenedor.inventario {
   
     & > .item {
       display: flex;
