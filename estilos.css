@@ -408,7 +408,7 @@
 }
 
 .conntenedor {
-  .inventario {
+  & > .inventario {
   
     width: 700px;
     background: #0e0e0e;
