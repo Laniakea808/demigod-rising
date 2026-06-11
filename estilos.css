@@ -442,3 +442,16 @@
     }
   }
 }
+
+.tablilla.rol.rayna {
+  max-width: 450px;
+} 
+
+.rayna strong, .rayna a{
+  color:var(--c)!important;
+}
+
+.tablilla.rayna .tabhead b {
+  font-size: 2rem; 
+  padding-bottom: 0.5rem;
+}
